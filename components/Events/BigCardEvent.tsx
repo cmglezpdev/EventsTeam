@@ -1,6 +1,6 @@
 import { Card, Badge, Avatar, Tooltip, Button } from 'flowbite-react';
 
-export const CardEvent = () => {
+export const BigCardEvent = () => {
   return (
     <div className="max-w-sm">
         <Card
