@@ -1,3 +1,5 @@
 export * from './Navbar';
-export * from './CardEvent';
 export * from './SearchInput';
+export * from './Events';
+export * from './EditProfile';
+export * from './Friend';
