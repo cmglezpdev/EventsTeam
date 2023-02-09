@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 import Head from 'next/head';
-import { NavBar } from '@/components';
+import { Footer, NavBar } from '@/components';
 
 interface Props {
     title: string;
@@ -30,6 +30,7 @@ export const AppLayout:FC<Props> = ({ children, title, pageDescription, imageFul
                 <main>
                     { children }
                 </main>
+                <Footer />
             </div>
         </>
     )
