@@ -1,18 +1,17 @@
 import { Avatar, Badge, Tooltip } from 'flowbite-react';
-import { CardFriend, NavBar } from "@/components";
-
-import img from '../../public/aaa.png';
+import { AppLayout } from '@/layouts';
 
 export default function EventPage () {
     return (
-        <>
-            <NavBar />
+        <AppLayout
+            title="EventsTeam - Your Events"
+            pageDescription="EventsTeam is a platform to create events and share them with your friends"
+        >
             <div className="max-w-4xl m-auto p-4">
                 <div 
                     className="w-full h-64 sm:h-96 bg-gray-300 rounded max-w-4xl m-auto"
                     style={{ 
                         backgroundImage: "url('https://flowbite.com/docs/images/blog/image-1.jpg')", 
-                        // backgroundImage: `url('/aaa.png')`, 
                         backgroundSize: 'contain',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
@@ -110,6 +109,6 @@ export default function EventPage () {
                     </div>
                 </div>
             </div>       
-        </>
+        </AppLayout>
     )
 }

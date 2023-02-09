@@ -2,17 +2,20 @@ import { Tabs } from 'flowbite-react';
 
 import { CalendarIcon, UserCicleIcon, EditIcon } from "@/components/Icons";
 import { ContactsList, EditProfile, EventsProfileList, NavBar } from "@/components";
+import { AppLayout } from '@/layouts';
 
 
 
 export default function ProfilePage () {
     return (
-        <div className=' container m-auto'>
-            <NavBar />
+        <AppLayout
+            title="EventsTeam - Your Events"
+            pageDescription="EventsTeam is a platform to create events and share them with your friends"
+        >
             <section className="px-4 flex flex-col md:flex-row">
                 <header className="p-3 md:max-w-[300px]">
                     <div className="w-full flex md:flex-col md:items-center items-center">
-                         {/* eslint-disable-next-line @next/next/no-img-element */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                             alt="Carlos Manuel González"
@@ -53,7 +56,7 @@ export default function ProfilePage () {
                     </Tabs.Group>
                 </section>
             </section>
-        </div>
+        </AppLayout>
     )
 }
 

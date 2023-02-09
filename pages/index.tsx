@@ -1,9 +1,12 @@
 import { BigCardEvent, NavBar, SearchInput } from "@/components";
+import { AppLayout } from "@/layouts/AppLayout";
 
 export default function Home() {
   return (
-    <main className="container px-4 m-auto">
-      <NavBar />
+    <AppLayout
+      title="EventsTeam - Your Events"
+      pageDescription="EventsTeam is a platform to create events and share them with your friends"
+    >
       <div className="min-w-[384px] max-w-xl m-auto mt-5 mb-9">
         <SearchInput />              
       </div>
@@ -15,6 +18,6 @@ export default function Home() {
         <BigCardEvent />
         <BigCardEvent />
       </div>
-    </main>
+    </AppLayout>
   )
 }
