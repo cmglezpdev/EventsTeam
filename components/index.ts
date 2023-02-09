@@ -3,3 +3,4 @@ export * from './SearchInput';
 export * from './Events';
 export * from './EditProfile';
 export * from './Friend';
+export * from './Footer';
