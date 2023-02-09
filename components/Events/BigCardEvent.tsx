@@ -2,7 +2,7 @@ import { Card, Badge, Avatar, Tooltip, Button } from 'flowbite-react';
 
 export const BigCardEvent = () => {
   return (
-    <div className="max-w-sm">
+    <div className="w-[290px] md:w-[320px]">
         <Card
             imgAlt="Meaningful alt text for an image that is not purely decorative"
             imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg"
